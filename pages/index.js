@@ -11,7 +11,7 @@ export default function Home() {
       {/* <SeoHead title='iDigitalDisha | Digital Marketing Service Agency in India' /> */}
       <Layout>
         <Hero />
-        {/* <Feature /> */}
+        <Feature />
         <Pricing />
       </Layout>
 

@@ -14,6 +14,7 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import Proposal from "./Modal/Propsal";
 
 
 
@@ -35,49 +36,49 @@ const Pricing = () => {
     {
       title: "Search Engine Optimization ",
       description: "Our SEO services are designed to help your website rank higher in search engine results pages (SERPs), drive organic traffic to your site, and increase your online visibility. We use a variety of proven techniques, such as keyword research, on-page optimization, and link building, to improve your website's search engine rankings.",
-      image: "/assets/banner6.gif",
+      image: "/assets/images/banner6.gif",
       link: ""
     }, {
       title: "Social Media Optimization  ",
       description: "We offer a range of social media marketing services that can help you build your brand, engage your audience, and drive conversions. We'll help you create compelling content, run targeted ad campaigns, and monitor your social media channels to ensure that you're getting the best possible results.",
-      image: "/assets/banner8.gif",
+      image: "/assets/images/banner8.gif",
       link: ""
     }, {
       title: "Email Marketing ",
       description: "Our email marketing services can help you reach your audience with personalized messages and targeted campaigns. We'll help you build your email list, create engaging content, and track your campaign's performance to ensure that you're getting the best possible results.",
-      image: "/assets/banner9.gif",
+      image: "/assets/images/banner9.gif",
       link: ""
     }, {
       title: "Facebook & Instagram Marketing ",
       description: "Our Digital Marketing Services Company specializes in Facebook and Instagram marketing services to help your business succeed on these popular social media platforms. We offer account setup and optimization, targeted advertising, content creation, and performance tracking to maximize your social media presence and drive results for your business. Contact us today to learn more about how we can help you succeed with Facebook and Instagram marketing.",
-      image: "/assets/banner6.gif",
+      image: "/assets/images/banner6.gif",
       link: ""
     }, {
       title: "Pay-per-click (PPC) Advertising  ",
       description: "Our PPC advertising services can help you reach your target audience quickly and effectively. We create targeted ads that appear in search engine results pages and other online platforms, such as social media and display networks. Our team of PPC experts will help you optimize your campaigns for maximum performance and ROI.",
-      image: "/assets/banner9.gif",
+      image: "/assets/images/banner9.gif",
       link: ""
     }, {
       title: "Graphic designing ",
       description: "At iDigital Disha, we offer professional graphic design services to help your brand stand out from the competition. Our experienced designers can create eye-catching graphics for your website, social media, advertising, and other marketing collateral. We offer custom designs that are tailored to your brand's unique identity, ensuring that your marketing materials are consistent and engaging. Contact us today to learn more about our graphic design services and how we can help enhance your brand's visual presence.",
-      image: "/assets/banner6.gif",
+      image: "/assets/images/banner6.gif",
       link: ""
     }, {
       title: "Web Development ",
       description: "Our Web Development service offers professional web development services to help you create a high-performing website that is optimized for both user experience and search engine performance. We specialize in building custom websites that are tailored to your business's unique needs, goals, and brand identity. Our team of experienced developers and designers can create a website that is visually engaging, easy to navigate, and optimized for conversions. Contact us today to learn more about our web development services and how we can help you create a website that stands out and drives results.",
-      image: "/assets/banner6.gif",
+      image: "/assets/images/banner6.gif",
       link: ""
     },
     {
       title: "Conversion Rate Optimization ",
       description: "Our CRO services are designed to help you increase your website's conversion rate and drive more sales and leads. We'll analyze your website's user experience and create targeted improvements that can help you achieve your online business goals.",
-      image: "/assets/banner6.gif",
+      image: "/assets/images/banner6.gif",
       link: ""
     },
     {
       title: "Content Marketing ",
       description: "We specialize in creating high-quality, engaging content that can help you attract and retain your target audience. We'll help you create blog posts, articles, videos, and other types of content that are optimized for search engines and social media.      ",
-      image: "/assets/banner6.gif",
+      image: "/assets/images/banner6.gif",
       link: ""
     }
   ]
@@ -88,7 +89,7 @@ const Pricing = () => {
     {
       title: "SILVER ",
       // description: "By employing ethical SEO techniques, leveraging top-notch SEO tools, and conducting comprehensive keyword research, we can assist in securing top rankings for your website on search engine results pages.",
-      image: "/assets/shop.png",
+      image: "/assets/images/shop.png",
       price: "10,000 INR",
       type:"Monthly",
       suitable:"Best for Small Business",
@@ -97,7 +98,7 @@ const Pricing = () => {
     }, {
       title: "GOLD  ",
       // description: "In the current digital landscape, companies that underestimate the impact of social media may struggle to succeed. Therefore, we aid in maintaining your connection to your desired audience on social media and ensuring their engagement.",
-      image: "/assets/company.png",
+      image: "/assets/images/company.png",
       price: "20,000 INR",
       type:"Monthly",
       suitable:"Best for Mid Size Business",
@@ -106,7 +107,7 @@ const Pricing = () => {
     }, {
       title: "PLATINUM",
       // description: "Email marketing is a cost-effective way to reach a large audience and build strong relationships with customers. By sending targeted, personalized messages, businesses can increase engagement, drive conversions, and generate valuable leads.",
-      image: "/assets/eccomerce.png",
+      image: "/assets/images/eccomerce.png",
       price: "40,000 INR",
       type:"Monthly",
       suitable:"Best for eCommerce Business",
@@ -301,7 +302,7 @@ const Pricing = () => {
                 <ScrollAnimationWrapper className="">
                   <motion.div
                     variants={scrollAnimation}
-                    className="  justify-center items-center border-2 border-gray-500 bg-orange-500  rounded-xl py-0 px-6 lg:px-6 xl:px-6"
+                    className="  justify-center items-center border-2 border-gray-500 bg-red-500 text-white  rounded-xl py-0 px-6 lg:px-6 xl:px-6"
                     whileHover={{
                       scale: 1.1,
                       transition: {
@@ -309,7 +310,7 @@ const Pricing = () => {
                       }
                     }}
                   >
-                    <div className="p-4 lg:p-0 mt-6 lg:mt-4">
+                    <div className="p-4 lg:p-0 mt-6 lg:mt-4 flex justify-center">
                       <Image
                         src={items.image}
                         width={60}
@@ -366,14 +367,16 @@ const Pricing = () => {
 
 
 
-        <div className="font-medium tracking-wide py-12 px-5 sm:px-8 border border-orange-500  outline-none rounded-l-lg rounded-r-lg capitalize bg-orange-500 text-white-500 transition-all shadow-orange">
+        <div className="font-medium tracking-wide py-12 px-5 sm:px-8 border border-orange-500  outline-none rounded-l-lg rounded-r-lg capitalize bg-red-500 text-gray-100 transition-all shadow-orange">
           <h1 className="text-4xl mb-3">Get a complimentary Site Audit</h1>
           <p className="mb-8 text-white-500 ">Connect with one of our specialists for a free consultation from our customer success team, today!</p>
 
-          <button className="font-medium tracking-wide py-2 px-5 sm:px-8 border border-orange-500 hover:border hover:border-white-500 text-orange-500 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-orange-500 hover:text-white-500 transition-all hover:shadow-orange mb-2 mr-2" onClick={handleShow}>Request Free Audit</button> 
+          <button className="font-medium tracking-wide py-2 px-5 sm:px-8 border border-orange-500 
+          hover:border hover:border-white-500 text-red-500 bg-gray-100 outline-none rounded-l-full 
+          rounded-r-full capitalize hover:bg-red-500 hover:text-gray-100 transition-all hover:shadow-orange mb-2 mr-2" onClick={handleShow}>Request Free Audit</button> 
         
            
-          <button className="py-2 lg:py-2 px-12 lg:px-16 rounded-l-full border border-white-500 rounded-r-full text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none undefined hover:bg-white-500 hover:text-orange-500"> + 91 99713 22654</button>
+          <button className="py-2 lg:py-2 px-12 lg:px-16 rounded-l-full border border-white-500 rounded-r-full text-gray-100 font-semibold rounded-lg bg-red-500 hover:shadow-orange-md transition-all outline-none undefined hover:bg-gray-100 hover:text-red-500"> + 91 99713 22654</button>
         </div>
 
 
@@ -384,7 +387,7 @@ const Pricing = () => {
     </div>
 
 
-
+    <Proposal show={show} handleClose={handleClose}/>
     {/* <Modal className="modal-contact" show={show} onHide={handleClose}>
        
        <Modal.Body>
@@ -453,7 +456,7 @@ const Pricing = () => {
        </Modal.Body>
        
      </Modal> */}
-
+ <hr/>
     </>
   );
 };

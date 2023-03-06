@@ -4,10 +4,10 @@
 
 
 
-.contact_us{
+/* .contact_us{
     background-color: #f1f1f1;
  
- }
+ } */
  
  .contact_inner{
     background-color: #fff;
@@ -16,7 +16,7 @@
     border-radius: 25px;
  }
  .contact_field{
-    padding: 60px 340px 90px 100px;
+    padding: 60px 40px;
  }
  .right_conatct_social_icon{
     height: 100%;
@@ -39,6 +39,7 @@
  .contact_field .form-control{
     border-radius: 0px;
     border: none;
+    padding: 3%;
     border-bottom: 1px solid #ccc;
  }
  .contact_field .form-control:focus{
@@ -124,3 +125,53 @@
  .modal-contact .modal-dialog{
      max-width: 1200px !important;
  }
+
+
+
+
+
+
+/* +_________________________ DROPDOWN _________________________*/
+
+
+  /* since nested groupes are not supported we have to use 
+     regular css for the nested dropdowns 
+  */
+  .group li>ul                 { transform: translatex(100%) scale(0) }
+  .group li:hover>ul           { transform: translatex(101%) scale(1) }
+  .group li > button svg       { transform: rotate(-90deg) }
+  .group li:hover > button svg { transform: rotate(-270deg) }
+
+  .butto li>ul                 { transform: translatex(100%) scale(0) }
+  .butto li:hover>ul           { transform: translatex(101%) scale(1) }
+  .butto li > butto svg       { transform: rotate(-90deg) }
+  .butto li:hover > butto svg { transform: rotate(-270deg) }
+
+
+  /* Below styles fake what can be achieved with the tailwind config
+     you need to add the group-hover variant to scale and define your custom
+     min width style.
+  	 See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
+  	 for implementation with config file
+  */
+  .group:hover .group-hover\:scale-100 { transform: scale(1) }
+  .group:hover .group-hover\:-rotate-180 { transform: rotate(180deg) }
+
+  .butto:hover .butto-hover\:scale-100 { transform: scale(1) }
+  .butto:hover .butto-hover\:-rotate-180 { transform: rotate(180deg) }
+
+  .scale-0 { transform: scale(0) }
+  .min-w-32 { min-width: 8rem }
+
+  .header-height{
+    top: 5%;
+    position: fixed;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .header-height{
+        top: 0%;
+        position: fixed;
+      }
+  }
+/* +_________________________ DROPDOWN _________________________*/

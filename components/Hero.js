@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
-
-
+import Carousel from 'react-bootstrap/Carousel';
+import Image from "next/image";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
@@ -11,7 +11,7 @@ import banner2 from "../public/assets/images/carousal2.png"
 import banner3 from "../public/assets/images/carousal3.png"
 import banner4 from "../public/assets/images/carousal4.png"
 
-import Image from "next/image";
+
 
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -39,11 +39,11 @@ const Hero = ({
 }) => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
+  // const handleSelect = (selectedIndex, e) => {
+  //   setIndex(selectedIndex);
+  // };
 
   const settings = {
     dots: false,
@@ -75,6 +75,13 @@ const Hero = ({
     ]
   };
 
+
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -86,9 +93,33 @@ const Hero = ({
   return (
     <>
 
-    
+    <div className="lg:mt-32 mt-24 ">
+    <Carousel activeIndex={index} onSelect={handleSelect}>
+      <Carousel.Item>
+      <Image src={banner1}  />
+        
+      </Carousel.Item>
+      <Carousel.Item>
+      <Image src={banner2}  />
+
+       
+      </Carousel.Item>
+      <Carousel.Item>
+      <Image src={banner3}  />
+
+        
+      </Carousel.Item>
+
+      <Carousel.Item>
+      <Image src={banner4}  />
+
+        
+      </Carousel.Item>
+    </Carousel>
+
+    </div>
       <div
-        style={{ backgroundColor: "#f5f0e5" }}
+        // style={{ backgroundColor: "#f5f0e5" }}
         className="max-w-screen-xl mt-0 px-8 py-1 xl:px-16 mx-auto mb-0"
         id="about"
       >

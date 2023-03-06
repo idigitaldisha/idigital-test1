@@ -5,6 +5,7 @@ import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 import Modal from 'react-bootstrap/Modal';
+import Link from "next/link";
 // import { useForm, ValidationError } from '@formspree/react';   
 
 
@@ -36,7 +37,7 @@ const Feature = () => {
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
-              src="/assets/banner5.gif"
+              src="/assets/images/banner5.gif"
               alt="VPN Illustrasi"
               layout="responsive"
               quality={100}
@@ -76,7 +77,8 @@ const Feature = () => {
               )
             )}
           </ul> */}
-          <button onClick={handleShow} className="btn btn-primary">Contact Us</button>
+          <Link href="/contact-us">  <button className="btn btn-primary">Contact Us</button></Link>
+        
         </motion.div>
      
         </ScrollAnimationWrapper>

@@ -4,6 +4,7 @@ import Image from "next/image";
 // import LogoVPN from "../../public/assets/Logo.svg";
 import logo from "../../public/assets/images/newlogo2.png"
 import Modal from 'react-bootstrap/Modal';
+import Proposal from "../Modal/Propsal";
 // import { useForm, ValidationError } from '@formspree/react';   
 
 
@@ -47,7 +48,8 @@ const Header = () => {
         }
       >
 
-        {mobilemenu? <div className="fixed block lg:hidden h-screen z-50 w-screen bg-gray-500">
+        {mobilemenu? 
+        <div className="fixed block lg:hidden h-screen z-50 w-screen bg-gray-200">
           <div className="py-10 px-8 ">
             <img className="float-right" onClick={() => setMobileMenu(false)} src="https://img.icons8.com/fluency-systems-regular/256/close-window.png" width={40} />
           </div>
@@ -77,7 +79,7 @@ const Header = () => {
                   </svg>
                 </span>
               </button>
-              <ul class="bg-orange-500 w-full text-white-500 border rounded-sm transform scale-0 z-40 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top " >
+              <ul class="bg-red-500 w-full text-white border rounded-sm transform scale-0 z-40 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top " >
 
 
 
@@ -101,11 +103,11 @@ const Header = () => {
                       </span>
                     </button>
                     <ul
-                      class="bg-orange-500 w-full text-white-500 border rounded-sm transform scale-0 butto-hover:scale-100 absolute 
+                      class="bg-red-500 w-full text-white border rounded-sm transform scale-0 butto-hover:scale-100 absolute 
                     transition duration-150 ease-in-out origin-top z-50" >
                       <li class="px-3 py-1 hover:bg-gray-100 hover:text-orange-500">Custom SEO Solutions</li>
 
-                      <li class="px-3 py-1 bg-orange-500 z-40 hover:bg-gray-100 hover:text-orange-500">Local SEO Service</li>
+                      <li class="px-3 py-1 bg-red-500 z-40 hover:bg-gray-100 hover:text-orange-500">Local SEO Service</li>
                       <li class="px-3 py-1 hover:bg-gray-100 hover:text-orange-500">SEO Audit Service</li>
                       <li class="px-3 py-1 hover:bg-gray-100 hover:text-orange-500">Technical SEO Service </li>
                       <li class="px-3 py-1 hover:bg-gray-100 hover:text-orange-500">Ecommerce SEO Service </li>
@@ -142,7 +144,7 @@ const Header = () => {
                       </span>
                     </button>
                     <ul
-                      class="bg-orange-500 w-full text-white-500 border rounded-sm transform scale-0 butto-hover:scale-100 absolute 
+                      class="bg-red-500 w-full text-white border rounded-sm transform scale-0 butto-hover:scale-100 absolute 
                       transition duration-150 ease-in-out origin-top z-50">
                       <li class="px-3 py-1 hover:bg-gray-100 hover:text-orange-500">Google Ads Management</li>
                       <li class="px-3 py-1 hover:bg-gray-100 hover:text-orange-500">Google Shopping</li>
@@ -174,7 +176,7 @@ const Header = () => {
                       </span>
                     </button>
                     <ul
-                      class="bg-orange-500 w-full text-white-500 border rounded-sm transform scale-0 butto-hover:scale-100 absolute 
+                      class="bg-red-500 w-full text-white border rounded-sm transform scale-0 butto-hover:scale-100 absolute 
                       transition duration-150 ease-in-out origin-top z-50">
                       <li class="px-3 py-1 hover:bg-gray-100 hover:text-orange-500">Facebook Ads</li>
                       <li class="px-3 py-1 hover:bg-gray-100 hover:text-orange-500">Instagram Ads</li>
@@ -207,7 +209,7 @@ const Header = () => {
                       </span>
                     </button>
                     <ul
-                      class="bg-orange-500 w-full text-white-500 border rounded-sm transform scale-0 butto-hover:scale-100 absolute 
+                      class="bg-red-500 w-full text-white border rounded-sm transform scale-0 butto-hover:scale-100 absolute 
                       transition duration-150 ease-in-out origin-top z-50">
                       <li class="px-3 py-1 hover:bg-gray-100 hover:text-orange-500">Content Writing</li>
                       <li class="px-3 py-1 hover:bg-gray-100 hover:text-orange-500">Digital PR</li>
@@ -239,7 +241,7 @@ const Header = () => {
                       </span>
                     </button>
                     <ul
-                      class="bg-orange-500 w-full text-white-500 border rounded-sm transform scale-0 butto-hover:scale-100 absolute 
+                      class="bg-red-500 w-full text-white border rounded-sm transform scale-0 butto-hover:scale-100 absolute 
                       transition duration-150 ease-in-out origin-top z-50">
                       <li class="px-3 py-1 hover:bg-gray-100 hover:text-orange-500">Brand Reputation Management</li>
                       <li class="px-3 py-1 hover:bg-gray-100 hover:text-orange-500">Corporate Reputation Management</li>
@@ -270,7 +272,7 @@ const Header = () => {
                       </span>
                     </button>
                     <ul
-                      class="bg-orange-500 w-full text-white-500 border rounded-sm transform scale-0 butto-hover:scale-100 absolute 
+                      class="bg-red-500 w-full text-white border rounded-sm transform scale-0 butto-hover:scale-100 absolute 
                       transition duration-150 ease-in-out origin-top z-50">
                       <li class="px-3 py-1 hover:bg-gray-100 hover:text-orange-500">WordPress Web Development</li>
                       <li class="px-3 py-1 hover:bg-gray-100 hover:text-orange-500">Custom Full Stack Development</li>
@@ -302,7 +304,7 @@ const Header = () => {
                       </span>
                     </button>
                     <ul
-                      class="bg-orange-500 w-full text-white-500 border rounded-sm transform scale-0 butto-hover:scale-100 absolute 
+                      class="bg-red-500 w-full text-white border rounded-sm transform scale-0 butto-hover:scale-100 absolute 
                       transition duration-150 ease-in-out origin-top z-50">
                       <li class="px-3 py-1 hover:bg-gray-100 hover:text-orange-500">Responsive Web Design</li>
                       <li class="px-3 py-1 hover:bg-gray-100 hover:text-orange-500">Logo Design</li>
@@ -356,7 +358,7 @@ const Header = () => {
                 </span>
               </button>
               <ul
-                class="bg-orange-500 w-full text-white-500 border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+                class="bg-red-500 w-full text-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
   transition duration-150 ease-in-out origin-top "
               >
                 <li class="rounded-sm px-3  text-center  w-full py-1 hover:bg-gray-100 hover:text-orange-500">Why Choose Us</li>
@@ -423,12 +425,13 @@ const Header = () => {
 
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
 
-            <div class="group inline-block cursor-pointer animation-hover inline-block relative text-black-500 hover:text-orange-500">
+            <div class="group inline-block cursor-pointer animation-hover inline-block relative text-black-500 ">
               <button
                 class="outline-none focus:outline-none  px-3 py-1  rounded-sm flex items-center min-w-32"
               >
-                <span class="pr-1 font-semibold flex-1"> <Link
+                <span class="pr-1 flex-1"> <Link
                   href="services"
+                  className="text-black"
                 > Services   </Link></span>
                 <span>
                   <svg
@@ -444,7 +447,7 @@ const Header = () => {
                 </span>
               </button>
               <ul
-                class="bg-orange-500 text-white-500 border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+                class="bg-red-500 text-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
   transition duration-150 ease-in-out origin-top "
               >
                 {/* <li class="rounded-sm px-3 w-72 py-1 hover:bg-gray-100  hover:text-orange-500">SEO</li>
@@ -475,7 +478,7 @@ const Header = () => {
                     </span>
                   </button>
                   <ul
-                    class="bg-orange-500 text-white-500 border rounded-sm absolute top-0 right-0 
+                    class="bg-red-500 text-white border rounded-sm absolute top-0 right-0 
   transition duration-150 ease-in-out origin-top-left
   min-w-32
   "
@@ -544,7 +547,7 @@ const Header = () => {
                     </span>
                   </button>
                   <ul
-                    class="bg-orange-500 text-white-500 border rounded-sm absolute top-0 right-0 
+                    class="bg-red-500 text-white border rounded-sm absolute top-0 right-0 
   transition duration-150 ease-in-out origin-top-left
   min-w-32
   "
@@ -576,7 +579,7 @@ const Header = () => {
                     </span>
                   </button>
                   <ul
-                    class="bg-orange-500 text-white-500 border rounded-sm absolute top-0 right-0 
+                    class="bg-red-500 text-white border rounded-sm absolute top-0 right-0 
   transition duration-150 ease-in-out origin-top-left
   min-w-32
   "
@@ -606,7 +609,7 @@ const Header = () => {
                     </span>
                   </button>
                   <ul
-                    class="bg-orange-500 text-white-500 border rounded-sm absolute top-0 right-0 
+                    class="bg-red-500 text-white border rounded-sm absolute top-0 right-0 
   transition duration-150 ease-in-out origin-top-left
   min-w-32
   "
@@ -637,7 +640,7 @@ const Header = () => {
                     </span>
                   </button>
                   <ul
-                    class="bg-orange-500 text-white-500 border rounded-sm absolute top-0 right-0 
+                    class="bg-red-500 text-white border rounded-sm absolute top-0 right-0 
   transition duration-150 ease-in-out origin-top-left
   min-w-32
   "
@@ -668,7 +671,7 @@ const Header = () => {
                     </span>
                   </button>
                   <ul
-                    class="bg-orange-500 text-white-500 border rounded-sm absolute top-0 right-0 
+                    class="bg-red-500 text-white border rounded-sm absolute top-0 right-0 
   transition duration-150 ease-in-out origin-top-left
   min-w-32
   "
@@ -700,7 +703,7 @@ const Header = () => {
                     </span>
                   </button>
                   <ul
-                    class="bg-orange-500 text-white-500 border rounded-sm absolute top-0 right-0 
+                    class="bg-red-500 text-white border rounded-sm absolute top-0 right-0 
   transition duration-150 ease-in-out origin-top-left
   min-w-32
   "
@@ -730,11 +733,12 @@ const Header = () => {
             </Link>
 
 
-            <div class="group inline-block cursor-pointer animation-hover inline-block relative text-black-500 hover:text-orange-500">
+            <div class="group inline-block cursor-pointer animation-hover inline-block relative text-black-500 ">
               <button
                 class="outline-none focus:outline-none  px-3 py-1  rounded-sm flex items-center min-w-32"
               >
-                <span class="pr-1 font-semibold flex-1"> <Link
+                <span class="pr-1 flex-1"> <Link
+                className="hover:text-black"
                   href="about-us"
                 > About Us   </Link></span>
                 <span>
@@ -751,7 +755,7 @@ const Header = () => {
                 </span>
               </button>
               <ul
-                class="bg-orange-500 text-white-500 border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+                class="bg-red-500 text-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
   transition duration-150 ease-in-out origin-top "
               >
                 <li class="rounded-sm px-3  w-72 py-1 hover:bg-gray-100 hover:text-orange-500">Why Choose Us</li>
@@ -818,7 +822,7 @@ const Header = () => {
       </header>
 
 
-
+      <Proposal show={show} handleClose={handleClose}/>
 
 
     </>
