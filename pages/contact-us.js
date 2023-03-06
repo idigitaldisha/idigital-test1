@@ -572,16 +572,16 @@ const contact = () => {
 
                     <div className="grid grid-cols-2 gap-4 mt-10 p-20">
                         <div >
-<h1 className="text-5xl">Get in Touch</h1>
-<br/>
-<hr/>
-<div className="py-10">
-<h2 className="text-xl mb-2">Head Office - <strong className="text-lg">Crazybrand Bazaar Private Limited, 4th Floor, Radha Krishna Bhawan, Park Road (opposite Civil Hospital Gate), Hazratganj, Lucknow – 226001</strong></h2>
+                            <h1 className="text-5xl">Get in Touch</h1>
+                            <br />
+                            <hr />
+                            <div className="py-10">
+                                <h2 className="text-xl mb-2">Head Office - <strong className="text-lg">Crazybrand Bazaar Private Limited, 4th Floor, Radha Krishna Bhawan, Park Road (opposite Civil Hospital Gate), Hazratganj, Lucknow – 226001</strong></h2>
 
-<h2 className="text-xl mb-2">Call Us - <strong className="text-lg">+91 9453242206, 7785866836</strong></h2>
+                                <h2 className="text-xl mb-2">Call Us - <strong className="text-lg">+91 9453242206, 7785866836</strong></h2>
 
-<h2 className="text-xl mb-2">Mail Us- <strong className="text-lg">info@digitaljugglers.com</strong></h2>
-</div>
+                                <h2 className="text-xl mb-2">Mail Us- <strong className="text-lg">info@digitaljugglers.com</strong></h2>
+                            </div>
                         </div>
                         <div className=" ">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"
